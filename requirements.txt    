@@ -1,0 +1,8 @@
+openai-whisper
+pydub
+noisereduce
+ffmpeg-python
+sentence-transformers
+chromadb
+langchain
+streamlit

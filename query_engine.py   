@@ -1,0 +1,18 @@
+# query_engine.py
+import chromadb
+from sentence_transformers import SentenceTransformer
+
+def search(query):
+    model = SentenceTransformer("all-MiniLM-L6-v2")
+    client = chromadb.PersistentClient(path="index")
+    collection = client.get_collection("podcasts")
+
+    results = collection.query(
+        query_embeddings=[model.encode(query).tolist()],
+        n_results=3
+    )
+    return results
+
+if __name__ == "__main__":
+    res = search("machine learning")
+    print(res)
