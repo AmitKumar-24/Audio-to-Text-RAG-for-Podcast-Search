@@ -33,15 +33,16 @@ The **frontend** is built with **Streamlit**, the backend uses **ChromaDB** for 
 
 ## 📂 Project Structure
 
-podcast_rag/
+# podcast_rag/
 │
-├── app.py # Streamlit UI
-├── process_audio.py # Audio processing & transcription
-├── build_index.py # Create embeddings index
-├── query_engine.py # Query ChromaDB
-├── requirements.txt # Dependencies
+├── - app.py # Streamlit UI
+├── - process_audio.py # Audio processing & transcription
+├── - build_index.py # Create embeddings index
+├── - query_engine.py # Query ChromaDB
+├── - requirements.txt # Dependencies
 │
-├── transcripts/ # JSON transcripts
-├── index/ # ChromaDB index files
-├── cleaned.wav # Processed audio file
-├── README.md # Documentation
+├── - transcripts/ # JSON transcripts
+├── - index/ # ChromaDB index files
+├── - cleaned.wav # Processed audio file
+├── - README.md # Documentation
+
